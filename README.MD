@@ -30,3 +30,8 @@ By default, it uses 3333 throughout. If you want to change it, just change it in
 | ----------------- | -------------------------------------------------------------------------------------- | --------------- |
 | 200-with-body     | This returns 200 OK with a fixed body                                                  | 200 OK          |
 | connection-failed | This doesn't return and merely fails, which can invoke errors on upstream applications | N/A             | 
+
+## Common Errors
+
+    panic: listen tcp :3333: bind: address already in use
+This error occurs when there is already an HTTP server running on that port. Make sure you aren't already running one of these, or change the port if it conflicts with another application.
