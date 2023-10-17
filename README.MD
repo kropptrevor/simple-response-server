@@ -6,7 +6,7 @@ This project is only intended to be run locally for testing.
 It is not indented to be run on a centralized server anywhere.
 
 ## Requirements
-- Go 1.21.0 or higher
+- Go 1.21
 
 ## Running
 
